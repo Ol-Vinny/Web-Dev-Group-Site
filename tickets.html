@@ -5,29 +5,42 @@
     <meta charset="UTF-8">
     <title>Tickets</title>
     <style>
-        .payment {
+        /* Styling to use the flex property value, creating a section to place the boxes */
+        .flexContainer {
+            display: flex;
+            flex-direction: row;
             width: 90%;
-            height: 20%;
-            margin: auto;
-            position: relative;
+            margin:auto;
         }
-        .content {
+
+        /* Sets the spacing and creates an outline for everything inside a payment box */
+        .flexBox {
             border:1px solid black;
-            vertical-align: top;
-            width: 15%;
+            width: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 1px;
         }
-        li:not(:last-child) {
-            padding-bottom: 15px;
+
+        /* Overwrites the default margin of the h1 default styling */
+        .paymentHeader {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 10px;
         }
-        li {
-            padding-right:5px;
+
+        .headerDivider{
+            border:1px dashed black;
         }
-        table {
-            border-spacing:0px;
-        }
-        .rightAlign {
+
+        .price{
+            font-weight: bold;
             text-align: right;
             padding-right: 10px;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 15px;
         }
     </style>
 </head>
@@ -43,72 +56,51 @@
         </nav>
     </header>
 
-    <section class="payment">
-        <table width="100%" height="100%">
-            <tbody>
-                <tr>
-                    <td width="15%"></td>
-                    <td class="content">
-                        <div>
-                            <h3><center>Standard</center></h3>
-                            <hr>
-                            <ul>
-                                <li>One day access to the park</li>
-                                <!-- <li>Children admitted at half-price</li> -->
-                            </ul>
-                        </div>
-                    </td>
-                    <td width="4%"></td>
-                    <td class="content">
-                        <div>
-                            <h3><center>Deluxe</center></h3>
-                            <hr>
-                            <ul>
-                                <li>One day access to the park</li>
-                                <li>Children admitted at half price</li>
-                                <li>Optional access to a park guide</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td width="4%"></td>
-                    <td class="content">
-                        <div>
-                            <h3><center>Season Pass</center></h3>
-                            <hr>
-                            <ul>
-                                <li>Access once per calander month</li>
-                                <li>Access for up to three individuals</li>
-                                <li>Optional access to a park guide</li>
-                                <li>Priority queueing at select rides</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td width="15%"></td>
-                </tr>
-                <tr>
-                    <td width="15%"></td>
-                    <td class="content">
-                        <div>
-                            <p class="rightAlign"><b>£79.99</b></p>
-                        </div>
-                    </td>
-                    <td width="4%"></td>
-                    <td class="content">
-                        <div>
-                            <p class="rightAlign"><b>£109.99</b></p>
-                        </div>
-                    </td>
-                    <td width="4%"></td>
-                    <td class="content">
-                        <div>
-                            <p class="rightAlign"><b>£749.99</b></p>
-                        </div>
-                    </td>
-                    <td width="15%"></td>
-                </tr>
-            </tbody>
-        </table>
+    <section>
+        <!-- Using this div with the flexContainer similarly to a table row -->
+        <div class="flexContainer">
+            <!-- Creating the divs that become boxes for the headers and primary content -->
+            <div class="flexBox">
+                <h1 class="paymentHeader">Standard</h1>
+                <hr class="headerDivider">
+                <ul>
+                    <li>One day access to the park</li>
+                </ul>
+            </div>
+            <div class="flexBox">
+                <h1 class="paymentHeader">Deluxe</h1>
+                <hr class="headerDivider">
+                <ul>
+                    <li>One day access to the park</li>
+                    <li>Children admitted at half price</li>
+                    <li>Optional access to a park guide</li>
+                </ul>
+            </div>
+            <div class="flexBox">
+                <h1 class="paymentHeader">Season Pass</h1>
+                <hr class="headerDivider">
+                <ul>
+                    <li>Access once per calander month</li>
+                    <li>Access for up to three individuals</li>
+                    <li>Optional access to a park guide</li>
+                    <li>Priority queueing at select rides</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Creating a new 'row' for the prices, to make each box line up at the bottom of the longest list, instead of a <hr> at the end of the list -->
+        <div class="flexContainer">
+            <div class="flexBox">
+                <p class="price">£79.99</p>
+            </div>
+            <div class="flexBox">
+                <p class="price">£109.99</p>
+            </div>
+            <div class="flexBox">
+                <p class="price">£749.99</p>
+            </div>
+        </div>
     </section>
+
     
      <!-- BEGINNING OF GLOBAL FOOTER  -->
 <footer>
