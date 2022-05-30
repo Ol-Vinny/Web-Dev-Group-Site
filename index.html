@@ -10,6 +10,7 @@
     <meta name="author" content="Team T4G6-QKA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
@@ -25,9 +26,44 @@
     </header>
     
     <!--Banner image with link to rides.html-->
-    <a href="rides.html">
-    <img src="https://cdn.pixabay.com/photo/2020/04/15/16/21/universal-5047370_1280.jpg" alt="Banner image of theme park">
-    </a>
+    <div id="hp_banner">
+        <img class="banner_image" src="assets/hp_banner_1.jpg" alt="An image of the full park" width="1280" height="376">
+        <img class="banner_image" src="assets/hp_banner_2.jpg" alt="An image of one of the spin rides" width="1280" height="376">
+        <img class="banner_image" src="assets/hp_banner_3.jpg" alt="An image of one of the rollercoasters" width="1280" height="376">
+        <img class="banner_image" src="assets/hp_banner_4.jpg" alt="An image of the bumper cars" width="1280" height="376">
+    
+        <h1 id="banner_heading">The world of fun and excitement awaits!</h1>
+    
+        <a id="banner_link" href="rides.html">Learn more</a>
+    </div>
+
+    <!-- Script handles the animation of the the banner images-->
+    <script>
+    let bannerIndex = 0;
+    carousel();
+
+    function carousel()
+    {
+        let i;
+        let x = document.getElementsByClassName("banner_image");
+        
+        for(i = 0; i < x.length; i++)
+        {
+            x[i].style.display = "none";
+        }
+
+        bannerIndex++;
+
+        if(bannerIndex > x.length)
+        {
+            bannerIndex = 1;
+        }
+        x[bannerIndex - 1].style.display = "block";
+
+        //2nd parameter is the duration between slides, 7000 = 7 seconds
+        setTimeout(carousel, 7000);
+    }
+    </script>
 
     <section>
         <h2>Quick Payment</h2>
@@ -48,14 +84,14 @@
     <section>
     <div>
         <h2>Offers and benefits</h2>
-        <img src="https://cdn.pixabay.com/photo/2017/07/07/04/09/girl-2480361_1280.jpg" alt="Image of a mother with her daughter">
+        <img src="assets/hp_offers_benefits.jpg" alt="Image of a mother with her daughter" width="320" height="213">
         <p>Find a plan that suits you, so you never have to miss a minute.</p>
         <a href="tickets.html">Get Details</a>
     </div>
     
     <div>
         <h2>Your guide on our rides and experiences</h2>
-        <img src="https://cdn.pixabay.com/photo/2021/09/03/18/19/sunset-6596290_1280.jpg" alt="Image showing the theme park and it's rides">
+        <img src="assets/hp_rides.jpg" alt="Image showing the theme park and it's rides" width="320" height="213">
         <p>Get a glimpse into the rides avaiable and the experience before you visit.</p>
         <a href="rides.html">Learn More</a>
     </div>
