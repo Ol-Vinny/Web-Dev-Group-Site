@@ -1,0 +1,53 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+a {
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.banner_image {
+    width: 100%;
+    height: auto;
+    filter: brightness(65%);
+}
+
+#hp_banner {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#banner_heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:normal;
+    white-space: nowrap;
+    font-size: 4vw;
+}
+
+#banner_link {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:lighter;
+    font-size: 14px;
+    color: white;
+}
+
+#banner_link :visited {
+    color: white;
+}
