@@ -6,14 +6,19 @@
 
 h2 {
     font-weight: normal;
+    color: rgb(0,107,163);
 }
 
 a {
     color: black;
 }
 
-a:visited{
+a:visited {
     color: black;
+}
+
+main {
+    margin-bottom: 50px;
 }
 
 /* HOME PAGE CSS */
@@ -38,6 +43,7 @@ a:visited{
     color: white;
     width: 130px;
     padding: 10px;
+    border-radius: 5px;
     border-style: solid;
     border-width: 2px;
 }
@@ -67,7 +73,6 @@ a:visited{
     text-shadow: 2px 2px 5px black;
 }
 
-/* Places heading in center of banner */
 #hp_banner h1 {
     position: absolute;
     top: 40%;
@@ -92,13 +97,46 @@ a:visited{
     color: white;
 }
 
-/* Layout of all card elements for left to right, and top to bottom */ 
-.hp-card-flex-container {
+/* CSS below is for the quick payment section below the banner*/
+
+/* Layout of all flex elements from left to right, and top to bottom */ 
+.hp-flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     justify-content: space-around;
+    align-items: center;
 }
+
+#hp-quick-payment {
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#hp-quick-payment h2 {
+    font-size: 16px;
+    line-height: 0.5;
+    text-align: center;
+}
+
+#hp-quick-payment p {
+    background-color: rgb(0,107,163);
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80px;
+}
+
+#hp-quick-payment p:hover {
+    background-color: white;
+    color: black;
+}
+
+/* CSS below is for the main content (cards) below the quick payment*/
 
 section.hp-content-card {
     margin: 10px;
