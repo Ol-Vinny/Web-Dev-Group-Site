@@ -5,45 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Tickets</title>
-    <style>
-        /* Styling to use the flex property value, creating a section to place the boxes */
-        .flexContainer {
-            display: flex;
-            flex-direction: row;
-            width: 90%;
-            margin:auto;
-        }
-
-        /* Sets the spacing and creates an outline for everything inside a payment box */
-        .flexBox {
-            border:1px solid black;
-            width: 20%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding: 1px;
-        }
-
-        /* Overwrites the default margin of the h1 default styling */
-        .paymentHeader {
-            text-align: center;
-            margin-bottom: 0px;
-            margin-top: 10px;
-        }
-
-        .headerDivider{
-            border:1px dashed black;
-        }
-
-        .price{
-            font-weight: bold;
-            text-align: right;
-            padding-right: 10px;
-        }
-
-        li:not(:last-child) {
-            padding-bottom: 15px;
-        }
-    </style>
 </head>
 
 <body>
@@ -58,46 +19,54 @@
     </header>
 
     <section>
+        <div class="tp-flexContainer">
+            <div class="tp-flexHeader">
+                <h1 class="tp-paymentHeader">Standard</h1>
+            </div>
+            <div class="tp-flexHeader">
+                <h1 class="tp-paymentHeader">Deluxe</h1>
+            </div>
+            <div class="tp-flexHeader">
+                <h1 class="tp-paymentHeader">Season Pass</h1>
+            </div>
+        </div>
+
         <!-- Using this div with the flexContainer similarly to a table row -->
-        <div class="flexContainer">
+        <div class="tp-flexContainer">
             <!-- Creating the divs that become boxes for the headers and primary content -->
-            <div class="flexBox">
-                <h1 class="paymentHeader">Standard</h1>
-                <hr class="headerDivider">
+            <div class="tp-flexBox">
                 <ul>
-                    <li>One day access to the park</li>
+                    <li class="tp-planPoints">One day access to the park</li>
                 </ul>
             </div>
-            <div class="flexBox">
-                <h1 class="paymentHeader">Deluxe</h1>
-                <hr class="headerDivider">
+            <div class="tp-flexBox">
                 <ul>
-                    <li>One day access to the park</li>
-                    <li>Children admitted at half price</li>
-                    <li>Optional access to a park guide</li>
+                    <li class="tp-planPoints">One day access to the park</li>
+                    <li class="tp-planPoints">Children admitted at half price</li>
+                    <li class="tp-planPoints">Optional access to a park guide</li>
                 </ul>
             </div>
-            <div class="flexBox">
-                <h1 class="paymentHeader">Season Pass</h1>
-                <hr class="headerDivider">
+            <div class="tp-flexBox">
                 <ul>
-                    <li>Access once per calander month</li>
-                    <li>Access for up to three individuals</li>
-                    <li>Optional access to a park guide</li>
-                    <li>Priority queueing at select rides</li>
+                    <li class="tp-planPoints">Access once per calander month</li>
+                    <li class="tp-planPoints">Access for up to three individuals</li>
+                    <li class="tp-planPoints">Optional access to a park guide</li>
+                    <li class="tp-planPoints">Priority queueing at select rides</li>
+                    <li class="tp-planPoints">Greatest Value!</li>
                 </ul>
             </div>
         </div>
+
         <!-- Creating a new 'row' for the prices, to make each box line up at the bottom of the longest list, instead of a <hr> at the end of the list -->
-        <div class="flexContainer">
-            <div class="flexBox">
-                <p class="price">£79.99</p>
+        <div class="tp-flexContainer">
+            <div class="tp-flexPrice">
+                <p class="tp-highlightedPrice">£49.99 <span class="tp-strickenPrice"> £79.99</span></p>
             </div>
-            <div class="flexBox">
-                <p class="price">£109.99</p>
+            <div class="tp-flexPrice">
+                <p class="tp-price">£109.99</p>
             </div>
-            <div class="flexBox">
-                <p class="price">£749.99</p>
+            <div class="tp-flexPrice">
+                <p class="tp-price">£749.99</p>
             </div>
         </div>
     </section>
