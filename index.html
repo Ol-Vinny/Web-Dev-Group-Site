@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <!--Global header to be added here-->
     <header>
         <h1><a href="/"><img src="assets/logo.png" alt="Logo"></a></h1>
         <nav id="primary-navigation">
@@ -24,6 +23,12 @@
             </ul>
         </nav>
     </header>
+
+    <section id="hp-promo-sale">
+        <h2>Our Early Season Sale ends June 12.</h2>
+        <h2>Get Single Day Tickets as low as $49.99!</h2>
+        <a href="tickets.html">Buy Now</a>
+    </section>
     
     <!--Banner image with link to rides.html-->
     <div id="hp_banner">
@@ -32,12 +37,12 @@
         <img class="banner_image" src="assets/hp_banner_3.jpg" alt="An image of one of the rollercoasters" width="1280" height="376">
         <img class="banner_image" src="assets/hp_banner_4.jpg" alt="An image of the bumper cars" width="1280" height="376">
     
-        <h1 id="banner_heading">The world of fun and excitement awaits!</h1>
+        <h1>The world of fun and excitement awaits!</h1>
     
-        <a id="banner_link" href="rides.html">Learn more</a>
+        <a href="rides.html">Learn more</a>
     </div>
 
-    <!-- Script handles the animation of the the banner images-->
+    <!-- Script handles changing the images in the banner-->
     <script>
     let bannerIndex = 0;
     carousel();
@@ -65,7 +70,7 @@
     }
     </script>
 
-    <section>
+    <section id="hp-quick-payment">
         <h2>Quick Payment</h2>
         <p>Select your plan:</p>
         <form>
@@ -81,21 +86,51 @@
         </form>
     </section>
 
-    <section>
-    <div>
-        <h2>Offers and benefits</h2>
-        <img src="assets/hp_offers_benefits.jpg" alt="Image of a mother with her daughter" width="320" height="213">
-        <p>Find a plan that suits you, so you never have to miss a minute.</p>
-        <a href="tickets.html">Get Details</a>
-    </div>
-    
-    <div>
-        <h2>Your guide on our rides and experiences</h2>
-        <img src="assets/hp_rides.jpg" alt="Image showing the theme park and it's rides" width="320" height="213">
-        <p>Get a glimpse into the rides avaiable and the experience before you visit.</p>
-        <a href="rides.html">Learn More</a>
-    </div>
-    </section>
+    <main>
+        <div class="hp-card-flex-container">
+            <section class="hp-content-card">
+                <h2>Offers and Benefits</h2>
+                <img src="assets/hp_offers_benefits.jpg" alt="Image of a mother with her daughter" width="320" height="213">
+                <p>Find a plan that suits you, so you never have to miss a minute.</p>
+                <a href="tickets.html">Get Details</a>
+            </section>
+            
+            <section class="hp-content-card">
+                <h2>Our Rides and Experiences</h2>
+                <img src="assets/hp_rides.jpg" alt="Image showing the theme park and it's rides" width="320" height="213">
+                <p>Get a glimpse into the rides avaiable and the experience before you visit.</p>
+                <a href="rides.html">Learn More</a>
+            </section>
+
+            <section class="hp-content-card">
+                <h2>Event Dates</h2>
+                <img src="assets/hp_event_dates.jpg" alt="Image showing a hotel room" width="320" height="213">
+                <p>PLEASE NOTE: Schedule and park hours subject to change without prior notice.</p>
+                <p><u>View Dates</u></p>
+            </section>
+
+            <section class="hp-content-card">
+                <h2>The Park</h2>
+                <img src="assets/hp_park_map.jpg" alt="Image showing a hotel room" width="320" height="213">
+                <p>Familiarize yourself with the map of the park and learn your way around.</p>
+                <p><u>Learn More</u></p>
+            </section>
+
+            <section class="hp-content-card">
+                <h2>Shop and Merchandise</h2>
+                <img src="assets/hp_shop.jpg" alt="Image showing our on site stores" width="320" height="213">
+                <p>View the merchanise available to purchase online or on site!</p>
+                <p><u>View Catalogue</u></p>
+            </section>
+
+            <section class="hp-content-card">
+                <h2>Nearby Accommodation</h2>
+                <img src="assets/hp_accommodation.jpg" alt="Image showing a hotel room" width="320" height="213">
+                <p>Find affordable hotels nearby and explore guest reviews.</p>
+                <p><u>View More</u></p>
+            </section>
+        </div>
+    </main>
     
      <!-- BEGINNING OF GLOBAL FOOTER  -->
 <footer>
