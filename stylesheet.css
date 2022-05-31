@@ -1,3 +1,4 @@
+/* Global CSS*/
 * {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -15,6 +16,40 @@ a:visited{
     color: black;
 }
 
+/* HOME PAGE CSS */
+
+/* CSS below is for the promotional sale after the navigation*/
+#hp-promo-sale {
+    background-color: rgb(255,131,0);
+    padding: 10px;
+    text-align: center;
+}
+
+#hp-promo-sale h2 {
+    line-height: 0.5;
+    color: white;
+}
+
+#hp-promo-sale a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0,107,163);
+    color: white;
+    width: 130px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#hp-promo-sale a:hover {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* CSS below is for the banner image below the promo sale*/
 .banner_image {
     width: 100%;
     height: auto;
@@ -26,9 +61,14 @@ a:visited{
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     color: white;
+    margin: 0px;
+
+    /* Add contrast for accessibilty*/
+    text-shadow: 2px 2px 5px black;
 }
 
-#banner_heading {
+/* Places heading in center of banner */
+#hp_banner h1 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -38,7 +78,7 @@ a:visited{
     font-size: 4vw;
 }
 
-#banner_link {
+#hp_banner a {
     position: absolute;
     bottom: 8%;
     left: 50%;
@@ -48,6 +88,37 @@ a:visited{
     color: white;
 }
 
-#banner_link :visited {
+#hp_banner a:visited {
     color: white;
+}
+
+/* Layout of all card elements for left to right, and top to bottom */ 
+.hp-card-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+section.hp-content-card {
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+    /* Handles the hover animation */
+    transition: all .2s ease-in-out;
+}
+
+section.hp-content-card:hover {
+    transform: scale(1.05);
+}
+
+section.hp-content-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
