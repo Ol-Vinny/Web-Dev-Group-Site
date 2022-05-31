@@ -31,7 +31,7 @@
     </section>
     
     <!--Banner image with link to rides.html-->
-    <div id="hp_banner">
+    <section id="hp_banner">
         <img class="banner_image" src="assets/hp_banner_1.jpg" alt="An image of the full park" width="1280" height="376">
         <img class="banner_image" src="assets/hp_banner_2.jpg" alt="An image of one of the spin rides" width="1280" height="376">
         <img class="banner_image" src="assets/hp_banner_3.jpg" alt="An image of one of the rollercoasters" width="1280" height="376">
@@ -40,7 +40,7 @@
         <h1>The world of fun and excitement awaits!</h1>
     
         <a href="rides.html">Learn more</a>
-    </div>
+    </section>
 
     <!-- Script handles changing the images in the banner-->
     <script>
@@ -71,65 +71,70 @@
     </script>
 
     <section id="hp-quick-payment">
-        <h2>Quick Payment</h2>
-        <p>Select your plan:</p>
-        <form>
-            <input type="radio" id="standard" name="quick_payment" value="Standard">
-            <label for="standard">Standard</label>
-            <input type="radio" id="deluxe" name="quick_payment" value="Deluxe">
-            <label for="deluxe">Deluxe</label>
-            <input type="radio" id="season_pass" name="quick_payment" value="Season Pass">
-            <label for="season_pass">Season Pass</label>
+        <div id="hp-flex-container">
+            <div>
+                <h2>Quick Payment</h2>
+            </div>
 
-            <!--At the moment this submit button does nothing, could probably do something better with CSS later-->
-            <input type="submit" value="Pay now">
-        </form>
+            <div>
+                <h2>Select your plan:</h2>
+                <form>
+                    <input type="radio" id="standard" name="quick_payment" value="Standard">
+                    <label for="standard">Standard</label>
+                    <input type="radio" id="deluxe" name="quick_payment" value="Deluxe">
+                    <label for="deluxe">Deluxe</label>
+                    <input type="radio" id="season_pass" name="quick_payment" value="Season Pass">
+                    <label for="season_pass">Season Pass</label>
+                </form>
+            </div>
+
+            <div>
+                <p><u>Checkout</u></p>
+            </div>
     </section>
 
-    <main>
-        <div class="hp-card-flex-container">
-            <section class="hp-content-card">
-                <h2>Offers and Benefits</h2>
-                <img src="assets/hp_offers_benefits.jpg" alt="Image of a mother with her daughter" width="320" height="213">
-                <p>Find a plan that suits you, so you never have to miss a minute.</p>
-                <a href="tickets.html">Get Details</a>
-            </section>
-            
-            <section class="hp-content-card">
-                <h2>Our Rides and Experiences</h2>
-                <img src="assets/hp_rides.jpg" alt="Image showing the theme park and it's rides" width="320" height="213">
-                <p>Get a glimpse into the rides avaiable and the experience before you visit.</p>
-                <a href="rides.html">Learn More</a>
-            </section>
+    <main id="hp-flex-container">
+        <section class="hp-content-card">
+            <h2>Offers and Benefits</h2>
+            <img src="assets/hp_offers_benefits.jpg" alt="Image of a mother with her daughter" width="320" height="213">
+            <p>Find a plan that suits you, so you never have to miss a minute.</p>
+            <a href="tickets.html">Get Details</a>
+        </section>
+        
+        <section class="hp-content-card">
+            <h2>Our Rides and Experiences</h2>
+            <img src="assets/hp_rides.jpg" alt="Image showing the theme park and it's rides" width="320" height="213">
+            <p>Get a glimpse into the rides avaiable and the experience before you visit.</p>
+            <a href="rides.html">Learn More</a>
+        </section>
 
-            <section class="hp-content-card">
-                <h2>Event Dates</h2>
-                <img src="assets/hp_event_dates.jpg" alt="Image showing a hotel room" width="320" height="213">
-                <p>PLEASE NOTE: Schedule and park hours subject to change without prior notice.</p>
-                <p><u>View Dates</u></p>
-            </section>
+        <section class="hp-content-card">
+            <h2>Event Dates</h2>
+            <img src="assets/hp_event_dates.jpg" alt="Image showing a hotel room" width="320" height="213">
+            <p>PLEASE NOTE: Schedule and park hours subject to change without prior notice.</p>
+            <p><u>View Dates</u></p>
+        </section>
 
-            <section class="hp-content-card">
-                <h2>The Park</h2>
-                <img src="assets/hp_park_map.jpg" alt="Image showing a hotel room" width="320" height="213">
-                <p>Familiarize yourself with the map of the park and learn your way around.</p>
-                <p><u>Learn More</u></p>
-            </section>
+        <section class="hp-content-card">
+            <h2>The Park</h2>
+            <img src="assets/hp_park_map.jpg" alt="Image showing a hotel room" width="320" height="213">
+            <p>Familiarize yourself with the map of the park and learn your way around.</p>
+            <p><u>Learn More</u></p>
+        </section>
 
-            <section class="hp-content-card">
-                <h2>Shop and Merchandise</h2>
-                <img src="assets/hp_shop.jpg" alt="Image showing our on site stores" width="320" height="213">
-                <p>View the merchanise available to purchase online or on site!</p>
-                <p><u>View Catalogue</u></p>
-            </section>
+        <section class="hp-content-card">
+            <h2>Shop and Merchandise</h2>
+            <img src="assets/hp_shop.jpg" alt="Image showing our on site stores" width="320" height="213">
+            <p>View the merchanise available to purchase online or on site!</p>
+            <p><u>View Catalogue</u></p>
+        </section>
 
-            <section class="hp-content-card">
-                <h2>Nearby Accommodation</h2>
-                <img src="assets/hp_accommodation.jpg" alt="Image showing a hotel room" width="320" height="213">
-                <p>Find affordable hotels nearby and explore guest reviews.</p>
-                <p><u>View More</u></p>
-            </section>
-        </div>
+        <section class="hp-content-card">
+            <h2>Nearby Accommodation</h2>
+            <img src="assets/hp_accommodation.jpg" alt="Image showing a hotel room" width="320" height="213">
+            <p>Find affordable hotels nearby and explore guest reviews.</p>
+            <p><u>View More</u></p>
+        </section>
     </main>
     
      <!-- BEGINNING OF GLOBAL FOOTER  -->
