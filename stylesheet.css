@@ -206,7 +206,7 @@ section.hp-content-card img {
     margin-right: auto;
 }
 
-section.hp-content-card #hp-underline {
+.hp-underline {
     text-decoration: underline;
 }
 
