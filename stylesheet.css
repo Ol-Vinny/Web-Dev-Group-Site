@@ -14,9 +14,6 @@ main {
 }
 
 /* Header and Menu */
-header {
-}
-
 .header-nav {
     display: block;
 }
@@ -207,6 +204,10 @@ section.hp-content-card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+section.hp-content-card #hp-underline {
+    text-decoration: underline;
 }
 
 /* main container of rides articles  */
