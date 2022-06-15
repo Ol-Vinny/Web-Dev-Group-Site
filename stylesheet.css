@@ -298,6 +298,7 @@ section.hp-content-card img {
             padding-right: 10px;
         }
 
+        /*The two styles below used to strike out a default price and replace it with a highlighted, bold price. The intent is to drive more people to select the specific option.*/
         .tp-highlightedPrice{
             font-weight: 800;
             color: red;
