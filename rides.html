@@ -12,7 +12,7 @@
 <body>
 
   <!-- BEGINNING OF GLOBAL HEADER  -->
-  <header>
+  <header id="navbar">
     <nav class="header-nav" aria-label="Main Navigation">
         <ul class="menu">
             <li class="logo">
@@ -26,6 +26,25 @@
         </ul>
     </nav>
   </header>
+  
+  <!-- Script for sticky header, applys sticky style when scolled -->
+    <script>
+        window.onscroll = function(){
+            addSticky();
+        }
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function addSticky(){
+            if(window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
   <!-- END OF GLOBAL HEADER  -->
     
