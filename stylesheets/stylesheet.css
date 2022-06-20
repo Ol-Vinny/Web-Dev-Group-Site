@@ -238,6 +238,13 @@ section.hp-content-card img {
   color: grey;
   border-radius: 5px;
   box-shadow: 0 3px 15px;
+  
+  /* Handles the hover animation */
+  transition: all .2s ease-in-out;
+}
+
+.rides-content:hover {
+    transform: scale(1.05);
 }
 
 /* rides main image */
