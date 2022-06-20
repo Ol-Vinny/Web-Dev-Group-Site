@@ -138,6 +138,7 @@ main {
     color: white;
 }
 
+/* Stops link text changing colour*/
 #hp_banner a:visited {
     color: white;
 }
