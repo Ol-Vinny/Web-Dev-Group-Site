@@ -63,7 +63,7 @@ main {
 }
 
 .menu-item a:hover {
-    color: #ccc;   
+    color: #ccc;
 }
 
 .active a {
@@ -155,7 +155,7 @@ main {
 
 /* CSS below is for the quick payment section below the banner*/
 
-/* Layout of all flex elements from left to right, and top to bottom */ 
+/* Layout of all flex elements from left to right, and top to bottom */
 .hp-flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -221,10 +221,13 @@ section.hp-content-card img {
     text-decoration: underline;
 }
 
+/*    RIDES PAGE CSS    */
+
 /* main container of rides articles  */
 .rides-container {
+  /* layout of the rides articles */
   display: flex;
-  justify-content: space-space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 25px;
   text-align: center;
@@ -232,28 +235,38 @@ section.hp-content-card img {
 
 /* rides article  */
 .rides-content {
+  /* layout of the ride content */
   margin: 25px 0 0 25px;
   flex: 1;
   flex-basis: 40%;
-  color: grey;
+  color: black;
   border-radius: 5px;
   box-shadow: 0 3px 15px;
-  
-  /* Handles the hover animation */
+
+  /* Handles the hover transition animation */
   transition: all .2s ease-in-out;
 }
 
 .rides-content:hover {
-    transform: scale(1.05);
+  /* handles the hover animation */
+  transform: scale(1.02);
+  box-shadow: 0 3px 15px rgba(0, 0, 200, 0.9);
 }
 
-/* rides main image */
+/* handles the colour of the rides article titles  */
+.rides-content h3 {
+  /* changes the colour to blue */
+  color: rgb(0,107,163);
+}
+
+
+/* handles the rides main image */
 .rides-img {
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
 
-/* rides icon image */
+/* handles the rides icon image */
 .rides-icon {
   margin-bottom: -10.5px;
 }
