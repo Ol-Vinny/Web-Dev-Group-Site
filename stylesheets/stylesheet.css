@@ -348,3 +348,49 @@ section.hp-content-card img {
         .tp-planPoints{
             padding-bottom: 15px;
         }
+        
+        /* background color and padding for general footer */
+        .footer-container{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color:  rgb(255,131,0);
+            padding-bottom: 4rem;
+            display: flex;
+        }
+
+        .footer {
+            width: 100%;
+            height: 10vh;
+            background-color:  rgb(255,131,0);
+            color: black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        /* sections */
+        .footer-heading {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+        }
+
+        .footer-heading h2 {
+            color: black;
+            margin-bottom: 2rem;
+        }
+
+        /* section links color and hover color*/
+        .footer-heading a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: .5rem;
+        }
+
+        .footer-heading a:hover {
+            color: red;
+            transition: .3s ease-out;
+        }
+
